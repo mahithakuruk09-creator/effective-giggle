@@ -1,0 +1,4 @@
+name: scredex
+packages:
+  - packages/**
+  - apps/**

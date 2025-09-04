@@ -1,0 +1,9 @@
+**/build/
+**/pubspec.lock
+.packages
+.dart_tool/
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+.env
