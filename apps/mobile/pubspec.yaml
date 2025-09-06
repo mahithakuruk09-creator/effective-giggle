@@ -10,6 +10,10 @@ dependencies:
   flutter_riverpod: ^2.5.1
   scredex_design_system:
     path: ../../packages/design_system
+  http: ^1.2.1
+  intl: ^0.19.0
+  confetti: ^0.7.0
+  shimmer: ^3.0.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
