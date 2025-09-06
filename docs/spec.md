@@ -1,1 +1,1 @@
-Refer to the product specification here.
+# Scredex Product Spec

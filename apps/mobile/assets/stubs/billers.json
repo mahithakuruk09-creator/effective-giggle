@@ -1,0 +1,29 @@
+[
+  {
+    "id": "cc1",
+    "category": "Credit Cards",
+    "name": "Barclaycard",
+    "logo": "https://example.com/barclaycard.png",
+    "due_amount": 200.0,
+    "due_date": "2025-10-10",
+    "status": "due"
+  },
+  {
+    "id": "util1",
+    "category": "Utilities",
+    "name": "Thames Water",
+    "logo": "https://example.com/thames.png",
+    "due_amount": 45.20,
+    "due_date": "2025-10-12",
+    "status": "overdue"
+  },
+  {
+    "id": "rent1",
+    "category": "Rent",
+    "name": "London Flats",
+    "logo": "https://example.com/rent.png",
+    "due_amount": 1200.0,
+    "due_date": "2025-10-05",
+    "status": "due"
+  }
+]
