@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'credit_score_screen.dart';
 
-class Screen extends StatelessWidget {
-  const Screen({super.key});
+class CreditScoreInsightsScreen extends StatelessWidget {
+  const CreditScoreInsightsScreen({super.key});
 
   @override
-  Widget build(BuildContext context) =>
-      const Scaffold(body: Center(child: Text('')));
+  Widget build(BuildContext context) => const CreditScoreScreen();
 }

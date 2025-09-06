@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import '../features/placeholder_screen.dart';
 
-class Screen extends StatelessWidget {
-  const Screen({super.key});
+class OffersScreen extends StatelessWidget {
+  const OffersScreen({super.key});
 
   @override
   Widget build(BuildContext context) =>
-      const Scaffold(body: Center(child: Text('')));
+      const PlaceholderScreen(title: 'Offers');
 }

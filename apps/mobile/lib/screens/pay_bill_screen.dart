@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import '../features/placeholder_screen.dart';
 
-class Screen extends StatelessWidget {
-  const Screen({super.key});
+class PayBillScreen extends StatelessWidget {
+  const PayBillScreen({super.key});
 
   @override
   Widget build(BuildContext context) =>
-      const Scaffold(body: Center(child: Text('')));
+      const PlaceholderScreen(title: 'Pay Bill');
 }

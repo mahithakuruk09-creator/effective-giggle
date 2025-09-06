@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'cards_screen.dart';
 
-class Screen extends StatelessWidget {
-  const Screen({super.key});
+class CardsWalletScreen extends StatelessWidget {
+  const CardsWalletScreen({super.key});
 
   @override
-  Widget build(BuildContext context) =>
-      const Scaffold(body: Center(child: Text('')));
+  Widget build(BuildContext context) => const CardsScreen();
 }

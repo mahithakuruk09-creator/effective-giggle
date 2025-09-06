@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'screens/screens.dart';
+import 'features/shop/shop_home_screen.dart';
+import 'features/shop/cart_screen.dart';
+import 'features/shop/wishlist_screen.dart';
+import 'features/shop/checkout_screen.dart';
+import 'features/shop/order_history_screen.dart';
+import 'features/insights_notifications/insights_screen.dart';
+import 'features/insights_notifications/notifications_screen.dart';
+import 'features/virtual_finance_layer/wallet_screen.dart';
 
 final _rootKey = GlobalKey<NavigatorState>();
 final _shellKey = GlobalKey<NavigatorState>();
@@ -31,9 +39,18 @@ final router = GoRouter(
     GoRoute(path: '/credit',     builder: (c, s) => const CreditScoreInsightsScreen()),
     GoRoute(path: '/loans',      builder: (c, s) => const LoansCreditScreen()),
     GoRoute(path: '/cards',      builder: (c, s) => const CardsWalletScreen()),
-    GoRoute(path: '/insights',   builder: (c, s) => const SpendingInsightsSubscriptionsScreen()),
-    GoRoute(path: '/notifications', builder: (c, s) => const NotificationsActivityScreen()),
+    // Replace old insights/notifications with new Phase 14 screens
+    GoRoute(path: '/insights',   builder: (c, s) => const InsightsScreen()),
+    GoRoute(path: '/notifications', builder: (c, s) => const NotificationsScreen()),
     GoRoute(path: '/support',    builder: (c, s) => const SupportTrustScreen()),
+    // Shop / E-commerce
+    GoRoute(path: '/shop',          builder: (c, s) => const ShopHomeScreen()),
+    GoRoute(path: '/shop/cart',     builder: (c, s) => const CartScreen()),
+    GoRoute(path: '/shop/wishlist', builder: (c, s) => const WishlistScreen()),
+    GoRoute(path: '/shop/checkout', builder: (c, s) => const CheckoutScreen()),
+    GoRoute(path: '/shop/orders',   builder: (c, s) => const OrderHistoryScreen()),
+    // Virtual Finance Layer (Mock Weavr/Railsr)
+    GoRoute(path: '/wallet', builder: (c, s) => const WalletVflScreen()),
   ],
 );
 
